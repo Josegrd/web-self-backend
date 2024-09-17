@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 import java.util.UUID;
 
-@CrossOrigin(origins = "*")
+@CrossOrigin(origins = "https://gardio.vercel.app", allowCredentials = "true")
 @RestController
 @RequestMapping("/api/v1/blog")
 @RequiredArgsConstructor
