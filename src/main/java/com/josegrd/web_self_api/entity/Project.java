@@ -39,6 +39,9 @@ public class Project {
     @Column(name = "end_project")
     private String endProject;
 
+    @Column(name = "created_date")
+    private LocalDateTime createdDate;
+
     @ElementCollection
     @CollectionTable(name = "m_project_stack", joinColumns = @JoinColumn(name = "project_id"))
     @Column(name = "stack")

@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Service;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.time.LocalDateTime;
 import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.UUID;
@@ -30,6 +31,7 @@ public class BlogServiceImpl implements BlogService {
         Blog blog1 = Blog.builder()
                 .title(blogDTO.getTitle())
                 .author(blogDTO.getAuthor())
+                .createdDate(LocalDateTime.now())
                 .headingImageUrl(blogDTO.getHeadingImageUrl())
                 .imageUrl(blogDTO.getImageUrl())
                 .build();
