@@ -74,6 +74,7 @@ public class ProjectServiceImpl implements ProjectService {
                 .urlProject(project.getUrlProject())
                 .startProject(project.getStartProject())
                 .endProject(project.getEndProject())
+                .createdDate(project.getCreatedDate())
                 .stack(project.getStack())
                 .build();
 

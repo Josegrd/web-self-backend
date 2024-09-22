@@ -22,4 +22,5 @@ public class BlogDTO {
     private String headingImageUrl;
     private String imageUrl;
     private List<BlogContentDTO> contents;
+    private LocalDateTime createdDate;
 }

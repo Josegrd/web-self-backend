@@ -6,6 +6,7 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.time.LocalDateTime;
 import java.util.List;
 
 @Data
@@ -20,4 +21,5 @@ public class ProjectDTO {
     private String startProject;
     private String endProject;
     private List<String> stack;
+    private LocalDateTime createdDate;
 }

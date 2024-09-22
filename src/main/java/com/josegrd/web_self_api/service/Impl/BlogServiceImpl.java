@@ -123,6 +123,7 @@ public class BlogServiceImpl implements BlogService {
                 .title(blog.getTitle())
                 .author(blog.getAuthor())
                 .headingImageUrl(blog.getHeadingImageUrl())
+                .createdDate(blog.getCreatedDate())
                 .imageUrl(blog.getImageUrl())
                 .contents(contents)
                 .build();
